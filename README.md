@@ -1,61 +1,42 @@
 
+## How to install in your computer.
 
-## About Project
-## API Kullanımı
-
-#### Tüm öğeleri getir
-
-```http
-  GET /api/items
-```
-
-| Parametre | Tip     | Açıklama                |
-| :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Gerekli**. API anahtarınız. |
-
-#### Öğeyi getir
-
-```http
-  GET /api/items/${id}
-```
-
-| Parametre | Tip     | Açıklama                       |
-| :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Gerekli**. Çağrılacak öğenin anahtar değeri |
-
-#### add(num1, num2)
-
-İki sayı alır ve toplamı döndürür.
-
-
-## Bilgisayarınızda Çalıştırın
-
-Projeyi klonlayın
+Clone the project.
 
 ```bash
   git clone https://link-to-project
 ```
 
-Proje dizinine gidin
+Go to project folder
 
 ```bash
   cd my-project
 ```
+Copy .env.example file to .env and edit database credentials there
 
-Gerekli paketleri yükleyin
+```bash
+  .env.example file to .env
+```
+
+Install composer
+
+```bash
+  composer install
+```
+Generate the key
+
+```bash
+  php artisan key:generate
+```
+
+Install the necessary packages
 
 ```bash
   npm install
 ```
 
-Sunucuyu çalıştırın
+Start the laravel
 
 ```bash
-  npm run start
+  php artisan serve
 ```
-
-## Yazarlar ve Teşekkür
-
-- [@bayramkeles61](https://github.com/bayramkeles61) tasarım ve geliştirme için.
-
-  
